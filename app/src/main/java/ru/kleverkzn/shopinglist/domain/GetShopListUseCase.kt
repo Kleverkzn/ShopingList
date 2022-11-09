@@ -1,9 +1,9 @@
 package ru.kleverkzn.shopinglist.domain
 
-class GetShopListUseCase {
+class GetShopListUseCase(private val shopListRepository: ShopListRepository) {
 
     fun getShopList(): List<ShopItem> {
-        TODO()
+        return shopListRepository.getShopList()
     }
 
 }
